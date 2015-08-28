@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A51C9EB1B25CE8B008C4598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A51C9EA1B25CE8B008C4598 /* AppDelegate.swift */; };
+		5A51C9F01B25CE8B008C4598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A51C9EE1B25CE8B008C4598 /* Main.storyboard */; };
+		5A51C9F21B25CE8B008C4598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A51C9F11B25CE8B008C4598 /* Assets.xcassets */; };
+		5A51CA0E1B25CEBB008C4598 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A51CA0B1B25CEBB008C4598 /* libWeChatSDK.a */; };
+		BB0C8CE31B87001B00E55C2A /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CE21B87001B00E55C2A /* TagViewController.swift */; };
+		BB0C8CEB1B886B6000E55C2A /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CEA1B886B6000E55C2A /* AboutTableViewController.swift */; };
+		BB0C8CED1B88777400E55C2A /* AuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CEC1B88777400E55C2A /* AuthorViewController.swift */; };
+		BB2C8A2A1B7379AF00825FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8A291B7379AF00825FCB /* LaunchScreen.storyboard */; };
+		BB34C8771B84450B0035166F /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34C8761B84450B0035166F /* PageContentViewController.swift */; };
+		BB34C8791B84465A0035166F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34C8781B84465A0035166F /* PageViewController.swift */; };
+		BB8379AC1B903A6B0046EFE6 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8379AB1B903A6B0046EFE6 /* MessageViewController.swift */; };
+		BB9911BB1B8B72C100B87321 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9911BA1B8B72C100B87321 /* LoginViewController.swift */; };
+		BB9911C51B8C523500B87321 /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9911C11B8C523500B87321 /* HRToast+UIView.swift */; };
+		BB9911C61B8C523500B87321 /* VuURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9911C21B8C523500B87321 /* VuURLProtocol.swift */; };
+		BB9911C71B8C523500B87321 /* WeiXinActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9911C31B8C523500B87321 /* WeiXinActivity.swift */; };
+		BB9911C81B8C523500B87321 /* WeiXinTimelineActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9911C41B8C523500B87321 /* WeiXinTimelineActivity.swift */; };
+		BB9911CC1B8C529800B87321 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9911CB1B8C529800B87321 /* Extensions.swift */; };
+		BB9911D01B8C5E3700B87321 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9911CF1B8C5E3700B87321 /* SettingTableViewController.swift */; };
+		BB9911D41B8C770F00B87321 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9911D31B8C770F00B87321 /* InfoTableViewController.swift */; };
+		BB9E299D1B8D5A4B0027B78F /* LikedActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E299C1B8D5A4B0027B78F /* LikedActivity.swift */; };
+		BB9E299F1B8D78BD0027B78F /* LikedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E299E1B8D78BD0027B78F /* LikedViewController.swift */; };
+		BB9E29A21B8DB5240027B78F /* Audio Machine - Breath and Life.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB9E29A11B8DB5240027B78F /* Audio Machine - Breath and Life.mp3 */; };
+		BB9E29A41B8DC3710027B78F /* MyQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E29A31B8DC3710027B78F /* MyQRCodeViewController.swift */; };
+		BB9E29A71B8DE9EF0027B78F /* QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9E29A61B8DE9EF0027B78F /* QRCode.m */; };
+		BB9E29A91B8EC1190027B78F /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E29A81B8EC1190027B78F /* ExploreViewController.swift */; };
+		BBAE40EF1B8327D400CAA114 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE40EE1B8327D400CAA114 /* IndexViewController.swift */; };
+		BBAE40F11B8327DC00CAA114 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE40F01B8327DC00CAA114 /* MoreViewController.swift */; };
+		BBAE40F31B8327E400CAA114 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE40F21B8327E400CAA114 /* SearchViewController.swift */; };
+		BBAE40F51B8327ED00CAA114 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE40F41B8327ED00CAA114 /* VideoModel.swift */; };
+		BBAE40F71B8327F500CAA114 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE40F61B8327F500CAA114 /* VideoViewController.swift */; };
+		BBAE41101B83AC9500CAA114 /* MeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE410F1B83AC9500CAA114 /* MeTableViewController.swift */; };
+		BBEFAE411B8AE57300D410FF /* vu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBEFAE3F1B8AE57300D410FF /* vu.xcdatamodeld */; };
+		BBEFAE451B8AF31B00D410FF /* WebApp in Resources */ = {isa = PBXBuildFile; fileRef = BBEFAE441B8AF31B00D410FF /* WebApp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A51C9FB1B25CE8B008C4598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A51C9DD1B25CE8A008C4598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A51C9E41B25CE8A008C4598;
+			remoteInfo = WeiXinShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A51C9E91B25CE8B008C4598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A51C9EA1B25CE8B008C4598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A51C9EF1B25CE8B008C4598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A51C9F11B25CE8B008C4598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A51CA0B1B25CEBB008C4598 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		5A51CA0C1B25CEBB008C4598 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		5A51CA0D1B25CEBB008C4598 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		BB0C8CE21B87001B00E55C2A /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		BB0C8CEA1B886B6000E55C2A /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		BB0C8CEC1B88777400E55C2A /* AuthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorViewController.swift; sourceTree = "<group>"; };
+		BB2C8A291B7379AF00825FCB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB34C8761B84450B0035166F /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		BB34C8781B84465A0035166F /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		BB8379AB1B903A6B0046EFE6 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		BB9911BA1B8B72C100B87321 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BB9911BE1B8C4EF400B87321 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BB9911C11B8C523500B87321 /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		BB9911C21B8C523500B87321 /* VuURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VuURLProtocol.swift; sourceTree = "<group>"; };
+		BB9911C31B8C523500B87321 /* WeiXinActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiXinActivity.swift; sourceTree = "<group>"; };
+		BB9911C41B8C523500B87321 /* WeiXinTimelineActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiXinTimelineActivity.swift; sourceTree = "<group>"; };
+		BB9911CB1B8C529800B87321 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BB9911CF1B8C5E3700B87321 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		BB9911D31B8C770F00B87321 /* InfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
+		BB9E299C1B8D5A4B0027B78F /* LikedActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedActivity.swift; sourceTree = "<group>"; };
+		BB9E299E1B8D78BD0027B78F /* LikedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedViewController.swift; sourceTree = "<group>"; };
+		BB9E29A11B8DB5240027B78F /* Audio Machine - Breath and Life.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Audio Machine - Breath and Life.mp3"; sourceTree = "<group>"; };
+		BB9E29A31B8DC3710027B78F /* MyQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQRCodeViewController.swift; sourceTree = "<group>"; };
+		BB9E29A51B8DE9A40027B78F /* QRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
+		BB9E29A61B8DE9EF0027B78F /* QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCode.m; sourceTree = "<group>"; };
+		BB9E29A81B8EC1190027B78F /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		BBAE40EE1B8327D400CAA114 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		BBAE40F01B8327DC00CAA114 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		BBAE40F21B8327E400CAA114 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BBAE40F41B8327ED00CAA114 /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		BBAE40F61B8327F500CAA114 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		BBAE40FF1B8329C900CAA114 /* 唯舞.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "唯舞.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAE41001B8329C900CAA114 /* 唯舞.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "唯舞.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAE410F1B83AC9500CAA114 /* MeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeTableViewController.swift; sourceTree = "<group>"; };
+		BBEFAE401B8AE57300D410FF /* vu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vu.xcdatamodel; sourceTree = "<group>"; };
+		BBEFAE441B8AF31B00D410FF /* WebApp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WebApp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A51C9E21B25CE8A008C4598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A51CA0E1B25CEBB008C4598 /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A51C9F71B25CE8B008C4598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A51C9DC1B25CE8A008C4598 = {
+			isa = PBXGroup;
+			children = (
+				5A51C9E71B25CE8A008C4598 /* 唯舞 */,
+				BBAE40FF1B8329C900CAA114 /* 唯舞.app */,
+				BBAE41001B8329C900CAA114 /* 唯舞.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		5A51C9E71B25CE8A008C4598 /* 唯舞 */ = {
+			isa = PBXGroup;
+			children = (
+				BB9911C01B8C523500B87321 /* Extension */,
+				5A51CA0A1B25CEBB008C4598 /* Resources */,
+				5A51C9EA1B25CE8B008C4598 /* AppDelegate.swift */,
+				BBEFAE3F1B8AE57300D410FF /* vu.xcdatamodeld */,
+				BBAE40F41B8327ED00CAA114 /* VideoModel.swift */,
+				BBAE40EE1B8327D400CAA114 /* IndexViewController.swift */,
+				BBAE40F01B8327DC00CAA114 /* MoreViewController.swift */,
+				BBAE40F61B8327F500CAA114 /* VideoViewController.swift */,
+				BB0C8CE21B87001B00E55C2A /* TagViewController.swift */,
+				BBAE40F21B8327E400CAA114 /* SearchViewController.swift */,
+				BBAE410F1B83AC9500CAA114 /* MeTableViewController.swift */,
+				BB9911BA1B8B72C100B87321 /* LoginViewController.swift */,
+				BB9911D31B8C770F00B87321 /* InfoTableViewController.swift */,
+				BB9E29A31B8DC3710027B78F /* MyQRCodeViewController.swift */,
+				BB0C8CEA1B886B6000E55C2A /* AboutTableViewController.swift */,
+				BB0C8CEC1B88777400E55C2A /* AuthorViewController.swift */,
+				BB9911CF1B8C5E3700B87321 /* SettingTableViewController.swift */,
+				5A51C9EE1B25CE8B008C4598 /* Main.storyboard */,
+				BB2C8A291B7379AF00825FCB /* LaunchScreen.storyboard */,
+				5A51C9F11B25CE8B008C4598 /* Assets.xcassets */,
+				BBEFAE441B8AF31B00D410FF /* WebApp */,
+				5A51C9E81B25CE8B008C4598 /* Supporting Files */,
+				BB9E29A01B8DB5240027B78F /* Others */,
+				BB34C8781B84465A0035166F /* PageViewController.swift */,
+				BB34C8761B84450B0035166F /* PageContentViewController.swift */,
+				BB9E299E1B8D78BD0027B78F /* LikedViewController.swift */,
+				BB9E29A81B8EC1190027B78F /* ExploreViewController.swift */,
+				BB8379AB1B903A6B0046EFE6 /* MessageViewController.swift */,
+			);
+			path = "唯舞";
+			sourceTree = "<group>";
+		};
+		5A51C9E81B25CE8B008C4598 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A51C9E91B25CE8B008C4598 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A51CA0A1B25CEBB008C4598 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A51CA0B1B25CEBB008C4598 /* libWeChatSDK.a */,
+				5A51CA0C1B25CEBB008C4598 /* WXApi.h */,
+				5A51CA0D1B25CEBB008C4598 /* WXApiObject.h */,
+				BB9911BE1B8C4EF400B87321 /* Bridging-Header.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB9911C01B8C523500B87321 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BB9911C11B8C523500B87321 /* HRToast+UIView.swift */,
+				BB9911C21B8C523500B87321 /* VuURLProtocol.swift */,
+				BB9911C31B8C523500B87321 /* WeiXinActivity.swift */,
+				BB9911C41B8C523500B87321 /* WeiXinTimelineActivity.swift */,
+				BB9E299C1B8D5A4B0027B78F /* LikedActivity.swift */,
+				BB9911CB1B8C529800B87321 /* Extensions.swift */,
+				BB9E29A51B8DE9A40027B78F /* QRCode.h */,
+				BB9E29A61B8DE9EF0027B78F /* QRCode.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BB9E29A01B8DB5240027B78F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				BB9E29A11B8DB5240027B78F /* Audio Machine - Breath and Life.mp3 */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A51C9E41B25CE8A008C4598 /* 唯舞 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A51CA041B25CE8B008C4598 /* Build configuration list for PBXNativeTarget "唯舞" */;
+			buildPhases = (
+				5A51C9E11B25CE8A008C4598 /* Sources */,
+				5A51C9E21B25CE8A008C4598 /* Frameworks */,
+				5A51C9E31B25CE8A008C4598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "唯舞";
+			productName = WeiXinShare;
+			productReference = BBAE40FF1B8329C900CAA114 /* 唯舞.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A51C9F91B25CE8B008C4598 /* 唯舞Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A51CA071B25CE8B008C4598 /* Build configuration list for PBXNativeTarget "唯舞Tests" */;
+			buildPhases = (
+				5A51C9F61B25CE8B008C4598 /* Sources */,
+				5A51C9F71B25CE8B008C4598 /* Frameworks */,
+				5A51C9F81B25CE8B008C4598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A51C9FC1B25CE8B008C4598 /* PBXTargetDependency */,
+			);
+			name = "唯舞Tests";
+			productName = WeiXinShareTests;
+			productReference = BBAE41001B8329C900CAA114 /* 唯舞.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A51C9DD1B25CE8A008C4598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = eular;
+				TargetAttributes = {
+					5A51C9E41B25CE8A008C4598 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 952J324HNJ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					5A51C9F91B25CE8B008C4598 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 5A51C9E41B25CE8A008C4598;
+					};
+				};
+			};
+			buildConfigurationList = 5A51C9E01B25CE8A008C4598 /* Build configuration list for PBXProject "唯舞" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A51C9DC1B25CE8A008C4598;
+			productRefGroup = 5A51C9DC1B25CE8A008C4598;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A51C9E41B25CE8A008C4598 /* 唯舞 */,
+				5A51C9F91B25CE8B008C4598 /* 唯舞Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A51C9E31B25CE8A008C4598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9E29A21B8DB5240027B78F /* Audio Machine - Breath and Life.mp3 in Resources */,
+				5A51C9F01B25CE8B008C4598 /* Main.storyboard in Resources */,
+				BBEFAE451B8AF31B00D410FF /* WebApp in Resources */,
+				5A51C9F21B25CE8B008C4598 /* Assets.xcassets in Resources */,
+				BB2C8A2A1B7379AF00825FCB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A51C9F81B25CE8B008C4598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A51C9E11B25CE8A008C4598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9911D01B8C5E3700B87321 /* SettingTableViewController.swift in Sources */,
+				BB8379AC1B903A6B0046EFE6 /* MessageViewController.swift in Sources */,
+				BB9E299F1B8D78BD0027B78F /* LikedViewController.swift in Sources */,
+				BB9E29A41B8DC3710027B78F /* MyQRCodeViewController.swift in Sources */,
+				BBAE41101B83AC9500CAA114 /* MeTableViewController.swift in Sources */,
+				BB9E29A71B8DE9EF0027B78F /* QRCode.m in Sources */,
+				BB9911C61B8C523500B87321 /* VuURLProtocol.swift in Sources */,
+				BBEFAE411B8AE57300D410FF /* vu.xcdatamodeld in Sources */,
+				BB9911C81B8C523500B87321 /* WeiXinTimelineActivity.swift in Sources */,
+				BB9911BB1B8B72C100B87321 /* LoginViewController.swift in Sources */,
+				BB34C8791B84465A0035166F /* PageViewController.swift in Sources */,
+				BB9E29A91B8EC1190027B78F /* ExploreViewController.swift in Sources */,
+				BBAE40F31B8327E400CAA114 /* SearchViewController.swift in Sources */,
+				BB9E299D1B8D5A4B0027B78F /* LikedActivity.swift in Sources */,
+				BBAE40F71B8327F500CAA114 /* VideoViewController.swift in Sources */,
+				BB0C8CED1B88777400E55C2A /* AuthorViewController.swift in Sources */,
+				BB9911C51B8C523500B87321 /* HRToast+UIView.swift in Sources */,
+				BB34C8771B84450B0035166F /* PageContentViewController.swift in Sources */,
+				BBAE40F51B8327ED00CAA114 /* VideoModel.swift in Sources */,
+				BBAE40F11B8327DC00CAA114 /* MoreViewController.swift in Sources */,
+				BB0C8CE31B87001B00E55C2A /* TagViewController.swift in Sources */,
+				BB9911CC1B8C529800B87321 /* Extensions.swift in Sources */,
+				BB9911C71B8C523500B87321 /* WeiXinActivity.swift in Sources */,
+				BB0C8CEB1B886B6000E55C2A /* AboutTableViewController.swift in Sources */,
+				BB9911D41B8C770F00B87321 /* InfoTableViewController.swift in Sources */,
+				5A51C9EB1B25CE8B008C4598 /* AppDelegate.swift in Sources */,
+				BBAE40EF1B8327D400CAA114 /* IndexViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A51C9F61B25CE8B008C4598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A51C9FC1B25CE8B008C4598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A51C9E41B25CE8A008C4598 /* 唯舞 */;
+			targetProxy = 5A51C9FB1B25CE8B008C4598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A51C9EE1B25CE8B008C4598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A51C9EF1B25CE8B008C4598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A51CA021B25CE8B008C4598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A51CA031B25CE8B008C4598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A51CA051B25CE8B008C4598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "唯舞/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/唯舞/Resources",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eular.vu;
+				PRODUCT_NAME = "唯舞";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "唯舞/Resources/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5A51CA061B25CE8B008C4598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "唯舞/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/唯舞/Resources",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eular.vu;
+				PRODUCT_NAME = "唯舞";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "唯舞/Resources/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5A51CA081B25CE8B008C4598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "唯舞Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "唯舞";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/唯舞.app/唯舞";
+			};
+			name = Debug;
+		};
+		5A51CA091B25CE8B008C4598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "唯舞Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "唯舞";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/唯舞.app/唯舞";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A51C9E01B25CE8A008C4598 /* Build configuration list for PBXProject "唯舞" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A51CA021B25CE8B008C4598 /* Debug */,
+				5A51CA031B25CE8B008C4598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A51CA041B25CE8B008C4598 /* Build configuration list for PBXNativeTarget "唯舞" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A51CA051B25CE8B008C4598 /* Debug */,
+				5A51CA061B25CE8B008C4598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A51CA071B25CE8B008C4598 /* Build configuration list for PBXNativeTarget "唯舞Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A51CA081B25CE8B008C4598 /* Debug */,
+				5A51CA091B25CE8B008C4598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BBEFAE3F1B8AE57300D410FF /* vu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BBEFAE401B8AE57300D410FF /* vu.xcdatamodel */,
+			);
+			currentVersion = BBEFAE401B8AE57300D410FF /* vu.xcdatamodel */;
+			path = vu.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5A51C9DD1B25CE8A008C4598 /* Project object */;
+}
