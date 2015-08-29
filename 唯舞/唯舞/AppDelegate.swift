@@ -17,6 +17,7 @@ let WeixinLoginNotification = "WeixinOauth2Back"
 let VuNotification = "VuIndexVideo"
 let AppDownload = "http://pre.im/1820"
 let VuAllDataApi = "http://urinx.sinaapp.com/vu.json?tag=&page=1"
+let pathArr = ["/routines/","/battles/","/info/"]
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate{

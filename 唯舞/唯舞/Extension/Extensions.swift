@@ -51,6 +51,11 @@ extension String {
         }
         return false
     }
+    
+    func hasOne(strArr: Array<String>) -> Bool {
+        let r = strArr.filter() { self.has($0) }
+        return !r.isEmpty
+    }
 }
 
 extension UIImageView {

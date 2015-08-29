@@ -167,7 +167,7 @@ class ExploreViewController: UIViewController, UITableViewDataSource, UITableVie
             let video = exploreVideoList[indexPath.row]
             let src = video.valueForKey("src") as! String
             let thumbnail = video.valueForKey("thumbnail") as! String
-            if src.has("/routines/") || src.has("/battles/") {
+            if src.hasOne(pathArr) {
                 // ...
             } else {
                 curVideo = VideoModel(title: "", src: src, thumbnail: thumbnail, views: "", comments: "", time: "")

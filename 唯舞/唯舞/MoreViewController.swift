@@ -133,7 +133,7 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let video = videoList[indexPath.row]
         let src = video.src
-        if src.has("/routines/") || src.has("/battles/") {
+        if src.hasOne(pathArr) {
             // ...
         } else {
             curVideo = video

@@ -47,7 +47,7 @@ class IndexViewController: UIViewController {
         for s in query.split("&") {
             t.append(s.split("=")[1])
         }
-        if t[0].has("/routines/") || t[0].has("/battles/") {
+        if t[0].hasOne(pathArr) {
             // ....
         } else {
             curVideo = VideoModel(title: "", src: t[0], thumbnail: t[1], views: "", comments: "", time: "")
