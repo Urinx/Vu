@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="nZW-X6-O03">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="nZW-X6-O03">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="568" id="1m3-DZ-Lih"/>
                                     <constraint firstAttribute="height" constant="568" id="8u0-Js-hpK"/>
@@ -49,19 +50,29 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nZW-X6-O03" firstAttribute="top" secondItem="sL0-Qa-Zx5" secondAttribute="bottom" constant="-20" id="14A-a9-l8X"/>
+                            <constraint firstItem="nZW-X6-O03" firstAttribute="top" secondItem="sL0-Qa-Zx5" secondAttribute="bottom" constant="-4" id="Fpy-ER-460"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nZW-X6-O03" secondAttribute="trailing" constant="-20" id="Zdf-j6-qAQ"/>
                             <constraint firstItem="nZW-X6-O03" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="e4n-8v-ajk"/>
                             <constraint firstItem="nZW-X6-O03" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eV5-go-zjf"/>
+                            <constraint firstItem="RjV-BM-e8B" firstAttribute="top" secondItem="nZW-X6-O03" secondAttribute="bottom" constant="16" id="ek7-Oz-W4H"/>
                             <constraint firstItem="nZW-X6-O03" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hRW-6T-uX2"/>
                             <constraint firstItem="nZW-X6-O03" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hqh-96-BMB"/>
                             <constraint firstItem="nZW-X6-O03" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kQb-eX-q1c"/>
+                            <constraint firstItem="nZW-X6-O03" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="mgB-lb-3KL"/>
+                            <constraint firstItem="RjV-BM-e8B" firstAttribute="top" secondItem="nZW-X6-O03" secondAttribute="bottom" id="ned-ez-LAG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nZW-X6-O03" secondAttribute="trailing" constant="120" id="s9X-Ao-r3a"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Fpy-ER-460"/>
                                 <exclude reference="e4n-8v-ajk"/>
                                 <exclude reference="eV5-go-zjf"/>
                                 <exclude reference="hRW-6T-uX2"/>
                                 <exclude reference="hqh-96-BMB"/>
                                 <exclude reference="kQb-eX-q1c"/>
+                                <exclude reference="s9X-Ao-r3a"/>
+                                <exclude reference="ek7-Oz-W4H"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -81,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154.5" y="244.5"/>
+            <point key="canvasLocation" x="-155" y="244"/>
         </scene>
     </scenes>
     <resources>

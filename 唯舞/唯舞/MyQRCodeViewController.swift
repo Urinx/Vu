@@ -14,19 +14,26 @@ class MyQRCodeViewController: UIViewController {
     @IBOutlet weak var headImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var QRImageView: UIImageView!
+    var isAuthor: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let info = NSUserDefaults.standardUserDefaults().objectForKey("userInfo")!
-        let nickname = info["nickname"] as! String
-        let headimgurl = info["headimgurl"] as! String
-        headImageView.imageFromUrl(headimgurl)
-        nameLabel.text = nickname
+        if isAuthor {
+            headImageView.image = UIImage(named: "authorHead")
+            nameLabel.text = "Ai"
+            QRImageView.image = QRCode().make(AuthorGithub)
+        } else {
+            let info = NSUserDefaults.standardUserDefaults().objectForKey("userInfo")!
+            let nickname = info["nickname"] as! String
+            let headimgurl = info["headimgurl"] as! String
+            headImageView.imageFromUrl(headimgurl)
+            nameLabel.text = nickname
+            QRImageView.image = QRCode().make(AppDownload)
+        }
         
         // let qrcode = createNonInterpolatedUIImageFormCIImage(createQRForString("123"), withSize: CGFloat(250))
-        QRImageView.image = QRCode().make(AppDownload)
         
         // set shadow
         QRImageView.layer.shadowOffset = CGSizeMake(0, 2)

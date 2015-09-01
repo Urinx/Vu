@@ -16,6 +16,7 @@ let HaidaiWXSecret = "9f0506b2c0ee777eff4532f316ffdf91"
 let WeixinLoginNotification = "WeixinOauth2Back"
 let VuNotification = "VuIndexVideo"
 let AppDownload = "http://pre.im/1820"
+let AuthorGithub = "http://urinx.github.io"
 let VuAllDataApi = "http://urinx.sinaapp.com/vu.json?tag=&page=1"
 let pathArr = ["/routines/","/battles/","/info/"]
 

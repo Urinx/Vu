@@ -13,7 +13,6 @@
 		5A51CA0E1B25CEBB008C4598 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A51CA0B1B25CEBB008C4598 /* libWeChatSDK.a */; };
 		BB0C8CE31B87001B00E55C2A /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CE21B87001B00E55C2A /* TagViewController.swift */; };
 		BB0C8CEB1B886B6000E55C2A /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CEA1B886B6000E55C2A /* AboutTableViewController.swift */; };
-		BB0C8CED1B88777400E55C2A /* AuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CEC1B88777400E55C2A /* AuthorViewController.swift */; };
 		BB2C8A2A1B7379AF00825FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8A291B7379AF00825FCB /* LaunchScreen.storyboard */; };
 		BB34C8771B84450B0035166F /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34C8761B84450B0035166F /* PageContentViewController.swift */; };
 		BB34C8791B84465A0035166F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34C8781B84465A0035166F /* PageViewController.swift */; };
@@ -62,7 +61,6 @@
 		5A51CA0D1B25CEBB008C4598 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		BB0C8CE21B87001B00E55C2A /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		BB0C8CEA1B886B6000E55C2A /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
-		BB0C8CEC1B88777400E55C2A /* AuthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorViewController.swift; sourceTree = "<group>"; };
 		BB2C8A291B7379AF00825FCB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB34C8761B84450B0035166F /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		BB34C8781B84465A0035166F /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 				BB9911D31B8C770F00B87321 /* InfoTableViewController.swift */,
 				BB9E29A31B8DC3710027B78F /* MyQRCodeViewController.swift */,
 				BB0C8CEA1B886B6000E55C2A /* AboutTableViewController.swift */,
-				BB0C8CEC1B88777400E55C2A /* AuthorViewController.swift */,
 				BB9911CF1B8C5E3700B87321 /* SettingTableViewController.swift */,
 				5A51C9EE1B25CE8B008C4598 /* Main.storyboard */,
 				BB2C8A291B7379AF00825FCB /* LaunchScreen.storyboard */,
@@ -324,7 +321,6 @@
 				BBAE40F31B8327E400CAA114 /* SearchViewController.swift in Sources */,
 				BB9E299D1B8D5A4B0027B78F /* LikedActivity.swift in Sources */,
 				BBAE40F71B8327F500CAA114 /* VideoViewController.swift in Sources */,
-				BB0C8CED1B88777400E55C2A /* AuthorViewController.swift in Sources */,
 				BB9911C51B8C523500B87321 /* HRToast+UIView.swift in Sources */,
 				BB34C8771B84450B0035166F /* PageContentViewController.swift in Sources */,
 				BBAE40F51B8327ED00CAA114 /* VideoModel.swift in Sources */,

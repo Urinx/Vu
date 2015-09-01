@@ -17,6 +17,11 @@ class MeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let footerView = UIView()
+        footerView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 1000)
+        footerView.backgroundColor = UIColor(red: 240 / 256, green: 240 / 256, blue: 240 / 256, alpha: 1)
+        tableView.tableFooterView = footerView
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -13,6 +13,7 @@ class LikedViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var likedVideoTableView: UITableView!
     @IBOutlet weak var likedSearchBar: UISearchBar!
+    @IBOutlet weak var textLabel: UILabel!
     
     let likedVideoCellIdentifier = "likedVideoCell"
     var likedVideoList = [NSManagedObject]()
@@ -36,6 +37,10 @@ class LikedViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         if likedVideoList.count == 0 {
             likedVideoTableView.hidden = true
+            textLabel.hidden = false
+        } else {
+            likedVideoTableView.hidden = false
+            textLabel.hidden = true
         }
         
         // Hide searchBar
