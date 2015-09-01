@@ -19,7 +19,7 @@ Also, You can download the source code, rebuild it in Xcode7 and then you can ru
 
 ## Requires
 
-Because it has not used `Autolayout` and `Size Classes`(will fix it later), only compatible with iPhone 5 and 5s, also requires iOS 8.4 and up!
+It's now compatible with iPhone 5 and up, also requires iOS 8.4 and up!
 
 ## Screenshots
 
